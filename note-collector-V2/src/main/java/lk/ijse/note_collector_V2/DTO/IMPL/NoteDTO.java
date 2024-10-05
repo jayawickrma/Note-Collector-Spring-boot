@@ -2,7 +2,7 @@ package lk.ijse.note_collector_V2.DTO.IMPL;
 
 
 
-import lk.ijse.nodecollecter.DTO.SuperDTO;
+import lk.ijse.note_collector_V2.DTO.SuperDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

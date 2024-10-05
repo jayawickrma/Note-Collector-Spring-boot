@@ -1,11 +1,8 @@
 package lk.ijse.note_collector_V2.Utill;
 
-import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
-import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
-import lk.ijse.nodecollecter.Entity.EntityIMPL.NoteEntity;
-import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
-import org.modelmapper.ModelMapper;
-import org.modelmapper.TypeToken;
+
+import lk.ijse.note_collector_V2.DTO.IMPL.UserDTO;
+import lk.ijse.note_collector_V2.Entity.EntityIMPL.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

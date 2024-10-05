@@ -1,7 +1,7 @@
 package lk.ijse.note_collector_V2.Entity.EntityIMPL;
 
-import jakarta.persistence.*;
-import lk.ijse.nodecollecter.Entity.SuperEntity;
+
+import lk.ijse.note_collector_V2.Entity.SuperEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,12 +1,13 @@
 package lk.ijse.note_collector_V2.service.IMPL;
 
-import lk.ijse.nodecollecter.DAO.NoteDAO;
-import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
-import lk.ijse.nodecollecter.Entity.EntityIMPL.NoteEntity;
-import lk.ijse.nodecollecter.Exeptions.DataPersistExeption;
-import lk.ijse.nodecollecter.Utill.AppUtill;
-import lk.ijse.nodecollecter.Utill.Mapping;
-import lk.ijse.nodecollecter.service.NoteServices;
+
+import lk.ijse.note_collector_V2.DAO.NoteDAO;
+import lk.ijse.note_collector_V2.DTO.IMPL.NoteDTO;
+import lk.ijse.note_collector_V2.Entity.EntityIMPL.NoteEntity;
+import lk.ijse.note_collector_V2.Exeptions.DataPersistExeption;
+import lk.ijse.note_collector_V2.Utill.AppUtill;
+import lk.ijse.note_collector_V2.Utill.Mapping;
+import lk.ijse.note_collector_V2.service.NoteServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

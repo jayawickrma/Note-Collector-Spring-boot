@@ -1,13 +1,11 @@
 package lk.ijse.note_collector_V2.service.IMPL;
 
-import jakarta.transaction.Transactional;
-import lk.ijse.nodecollecter.CustomStatusCode.SelectedUserStatus;
-import lk.ijse.nodecollecter.DAO.UserDAO;
-import lk.ijse.nodecollecter.DTO.IMPL.UserDTO;
-import lk.ijse.nodecollecter.Entity.EntityIMPL.UserEntity;
-import lk.ijse.nodecollecter.Exeptions.DataPersistExeption;
-import lk.ijse.nodecollecter.Utill.Mapping;
-import lk.ijse.nodecollecter.service.UserService;
+import lk.ijse.note_collector_V2.DAO.UserDAO;
+import lk.ijse.note_collector_V2.DTO.IMPL.UserDTO;
+import lk.ijse.note_collector_V2.Entity.EntityIMPL.UserEntity;
+import lk.ijse.note_collector_V2.Exeptions.DataPersistExeption;
+import lk.ijse.note_collector_V2.Utill.Mapping;
+import lk.ijse.note_collector_V2.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

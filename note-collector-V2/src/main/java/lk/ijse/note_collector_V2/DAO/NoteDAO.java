@@ -1,7 +1,7 @@
 package lk.ijse.note_collector_V2.DAO;
 
-import lk.ijse.nodecollecter.Entity.EntityIMPL.NoteEntity;
-import org.springframework.data.jpa.repository.JpaRepository;
+
+import lk.ijse.note_collector_V2.Entity.EntityIMPL.NoteEntity;
 import org.springframework.stereotype.Repository;
 
 @Repository
