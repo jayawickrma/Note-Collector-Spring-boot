@@ -1,6 +1,8 @@
 package lk.ijse.note_collector_V2.service;
 
-import lk.ijse.nodecollecter.DTO.IMPL.NoteDTO;
+
+
+import lk.ijse.note_collector_V2.DTO.IMPL.NoteDTO;
 
 import java.util.List;
 

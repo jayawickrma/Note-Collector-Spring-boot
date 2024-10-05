@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/note-collector-V2.iml" filepath="$PROJECT_DIR$/.idea/note-collector-V2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/note-collector-V2.note-collector-V2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/note-collector-V2.note-collector-V2.main.iml" />
     </modules>
   </component>
 </project>

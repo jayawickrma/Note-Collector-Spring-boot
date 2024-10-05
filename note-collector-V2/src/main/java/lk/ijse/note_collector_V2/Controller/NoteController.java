@@ -1,7 +1,10 @@
 package lk.ijse.note_collector_V2.Controller;
 
 
+import lk.ijse.note_collector_V2.DTO.IMPL.NoteDTO;
+import lk.ijse.note_collector_V2.service.NoteServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

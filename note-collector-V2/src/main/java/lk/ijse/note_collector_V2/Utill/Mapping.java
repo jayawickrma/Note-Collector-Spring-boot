@@ -1,8 +1,12 @@
 package lk.ijse.note_collector_V2.Utill;
 
 
+import lk.ijse.note_collector_V2.DTO.IMPL.NoteDTO;
 import lk.ijse.note_collector_V2.DTO.IMPL.UserDTO;
+import lk.ijse.note_collector_V2.Entity.EntityIMPL.NoteEntity;
 import lk.ijse.note_collector_V2.Entity.EntityIMPL.UserEntity;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -25,7 +29,7 @@ public class Mapping {
 
 
     //note Entity
-    public  NoteEntity toNoteEntity(NoteDTO noteDTO){return modelMapper.map(noteDTO,NoteEntity.class);}
+    public NoteEntity toNoteEntity(NoteDTO noteDTO){return modelMapper.map(noteDTO,NoteEntity.class);}
     public NoteDTO toNoteDto(NoteEntity noteEntity){return modelMapper.map(noteEntity,NoteDTO.class);}
     public List<NoteDTO>allNotes(List<NoteEntity> noteEntities){
         return modelMapper.map(noteEntities,new TypeToken<List<NoteDTO>>(){}.getType());
