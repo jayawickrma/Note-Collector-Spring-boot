@@ -19,10 +19,10 @@ public class JWTConfigFuilter extends OncePerRequestFilter {
 
             //todo :validate token
         if (StringUtils.isEmpty(initoken) || initoken.startsWith("bearer")){
-
+            filterChain.doFilter(request,response);
         }
 
             //Todo :Extract Token
-
+        extractJWTtocken =initoken.substring(7);
     }
 }
