@@ -13,27 +13,17 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 public class SecurityCoonfig {
-    @Value("${secure.username}")
-    private String userName;
-    @Value("${secure.password}")
-    private String password;
-    @Value("${secure.roles}")
-    private String role;
     @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests()
-                .anyRequest().authenticated()
-                .and()
-                .httpBasic();
-        return http.build();
-    }
-    @Bean
-    public InMemoryUserDetailsManager inMemoryUserDetailsManager(){
-        UserDetails userDetails = User.withDefaultPasswordEncoder()
-                .username(userName)
-                .password(password)
-                .roles(role).build();
-        return new InMemoryUserDetailsManager(userDetails);
-    }
+        public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity){
+            httpSecurity.csrf(AbstractHttpConfigurer::disable)
+                    .authorizeHttpRequests(req->req.requestMatchers("api/v1/auth/**")
+                    .permitAll()
+                            .anyRequest()
+                            .authenticated())
+
+                    .sessionManagement(session->)
+                    .authenticationProvider()
+                    .addFilterBefore();
+            return httpSecurity.build()
+        }
 }
